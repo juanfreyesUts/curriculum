@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(29, 29, 29);
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 12px;
+}
+
+.info, .central{
+    padding-left: 5%;
+    height: 100vh;
+}
+
+.info {
+    padding-top: 18.5px;
+}
+
+.central{
+    padding-top: 2%;
+}
+
+.info{
+    float: left;
+    background-image: url('../images/info.jpg');
+    width: 20%;
+    font-size: 1.4em;
+    color: azure;
+}
+
+#photo{
+    width: 70%;
+    height: 50%;
+    position: relative;
+    border: 1px solid rgb(86, 161, 211);
+    border-radius: 100%;
+}
+
+.central {
+    background-color: rgb(241, 241, 241);
+    width: 42%;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.title{
+    font-size: 1.3em;
+    color: rgb(194, 3, 3);
+    font-weight: 900;
+}
+
+#name{
+    font-size: 2em;
+    text-align: left;
+    font-weight: 900;
+    color:rgb(39, 3, 80)
+}
+
+aside{
+    float: right;
+    width: 26%;
+    height: 100vh;
+    background-color: rgb(216, 205, 192);
+    margin: 0 auto;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+input{
+    display: block;
+}
+
+#fname, #lname{
+    width: 80%;
+}
+
+.clean{
+    height: 40px;
+}
+
+button{
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: gray;
+}
+
+.clean{
+    background-color: yellow;
+}
+
+.create, .update{
+    background-color: aqua;
+}
+
+.delete{
+    background-color: red;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>CV Juan Reyes</title>
+</head>
+<body>
+    <article class="info">
+        <section>
+            <img src="images/fotohdv.png" alt="photo" id="photo">
+            <h2>Información</h2>
+            <p><b>Juan Fernando Reyes Neira <br>
+                Desarrollador web</b><br>
+                20 años <br>
+                Bucaramanga, <br> 
+                Santander</p>
+        </section>
+    </article>
+    <article class="central">
+        <div id="name">
+            <h1>Juan Fernando<br>
+                Reyes Neira
+            </h1>
+        </div>
+        <section>
+            <p class="title">Historial laboral</p>
+            <p>
+                <b>Agente teleoperador.</b> <br>
+                Soporte tecnico de servicios Movistar España. <br>
+                Experiencia 1 año.
+            </p>
+        </section>
+        <section>
+            <p class="title">Formación</p>
+            <p>
+                <b>Tecnología en desarrollo de sistemas informaticos</b><br>
+                Unidades Tecnologicas de Santander<br>
+                2019 - Actual
+            </p>
+            <p>
+                <b>Tecnico en sistemas</b><br>
+                Sena<br>
+                2017 - 2018
+            </p>
+            <p>
+                <b>Educación básica</b> <br>
+                Colegio el Carmen<br>
+                2018
+            </p>
+        </section>
+        <section>
+            <p class="title">Certificados</p>
+            <p>Desarrollo web <br>
+                Ciberseguridad <br>
+                Cloud computing <br>
+                Digitalización laboral
+            </p>
+        </section>
+    </article>
+    <aside>
+        <div id="header"><p><b>Crud</b></p></div>
+        <form onsubmit="event.preventDefault()">
+            <input id="fname" name="fname" placeholder="Nombre">
+            <input id="lname" name="lname" placeholder="Apellido">
+            <button class="clean" onclick="clearForm()">Limpiar formulario</button>
+            <br><br>
+            <button class="create" onclick="create()">Crear</button>
+            <button class="update" onclick="update()">Actualizar</button>
+            <button class="delete" onclick="deleteItem()">Eliminar</button>
+            <br><br>
+            <select id="panel" size="18" onclick="panelClick()"> </select>
+        </form>
+    </aside>
+    <script src="js/crud.js"></script>
+</body>
+</html>
