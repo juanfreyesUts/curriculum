@@ -61,17 +61,16 @@
         </section>
     </article>
     <aside>
-        <div id="header"><p><b>Crud</b></p></div>
+        <div id="header"><p><b>¿Desea añadir un comentario?</b></p></div>
         <form onsubmit="event.preventDefault()">
-            <input id="fname" name="fname" placeholder="Nombre">
-            <input id="lname" name="lname" placeholder="Apellido">
+            <input id="comentario" name="comentario" placeholder="comentario">
             <button class="clean" onclick="clearForm()">Limpiar formulario</button>
             <br><br>
             <button class="create" onclick="create()">Crear</button>
             <button class="update" onclick="update()">Actualizar</button>
             <button class="delete" onclick="deleteItem()">Eliminar</button>
             <br><br>
-            <select id="panel" size="18" onclick="panelClick()"> </select>
+            <select id="panel" size="10" onclick="panelClick()"> </select>
         </form>
     </aside>
     <script src="js/crud.js"></script>

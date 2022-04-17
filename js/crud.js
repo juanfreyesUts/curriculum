@@ -1,16 +1,12 @@
 let el, i;
 let data = [
-  { firstname: "Mauricio", lastname: "Sevilla" },
-  { firstname: "Jorge", lastname: "Barón" },
-  { firstname: "Andrés", lastname: "Espinoza" },
-  { firstname: "Rafael", lastname: "Pérez" }
+  { comentario: "Está es mi hoja de vida."}
 ];
 let panel = document.querySelector("#panel");
 
 
 function clearForm() {
-  document.querySelector("#fname").value = "";
-  document.querySelector("#lname").value = "";
+  document.querySelector("#comentario").value = "";
 }
 
 function renderItem() {
@@ -18,15 +14,14 @@ function renderItem() {
   panel.textContent = "";
   data.forEach(x => {
     el = document.createElement("option");
-    el.innerText = `${x.firstname} ${x.lastname}`;
+    el.innerText = `${x.comentario}`;
     panel.append(el);
   });
 }
 
 function create() {
-  let fn = document.querySelector("#fname").value;
-  let ln = document.querySelector("#lname").value;
-  data = [...data, { firstname: fn, lastname: ln }];
+  let fn = document.querySelector("#comentario").value;
+  data = [...data, { comentario: fn}];
   clearForm();
   console.log(data)
   renderItem();
@@ -34,13 +29,11 @@ function create() {
 
 function panelClick() {
   i = panel.selectedIndex;
-  document.querySelector("#fname").value = data[i].firstname;
-  document.querySelector("#lname").value = data[i].lastname;
+  document.querySelector("#comentario").value = data[i].comentario;
 }
 
 function update() {
-  data[i].firstname = document.querySelector("#fname").value;
-  data[i].lastname = document.querySelector("#lname").value;
+  data[i].comentario = document.querySelector("#comentario").value;
   renderItem();
 }
 

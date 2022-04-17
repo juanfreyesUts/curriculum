@@ -63,14 +63,11 @@ aside{
     margin: 0 auto;
     padding-bottom: 2%;
     padding-left: 2%;
+    font-size: 30px;
 }
 
 input{
     display: block;
-}
-
-#fname, #lname{
-    width: 80%;
 }
 
 .clean{
@@ -99,4 +96,14 @@ button:active{
 
 .delete{
     background-color: red;
+}
+
+#panel{
+    width: 95%;
+}
+
+#comentario{
+    border-radius: 20px;
+    width: 90%;
+    height: 30px;
 }
